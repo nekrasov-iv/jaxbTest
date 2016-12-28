@@ -11,20 +11,19 @@ public class NamespaceFilter extends XMLFilterImpl {
  
     @Override
     public void endElement(String uri, String localName, String qName) throws SAXException {
-    	if("product".equals(qName)) {
-    		super.endElement(NAMESPACE2, localName, qName);
-    	} else {
+    	if("purchase-request".equals(qName)) {
     		super.endElement(NAMESPACE1, localName, qName);
+    	} else {
+    		super.endElement(NAMESPACE2, localName, qName);
     	}
     }
  
     @Override
     public void startElement(String uri, String localName, String qName, Attributes atts) throws SAXException {
-//        super.startElement(NAMESPACE, localName, qName, atts);
-    	if("product".equals(qName)) {
-            super.startElement(NAMESPACE2, localName, qName, atts);
-        } else {
+    	if("purchase-request".equals(qName)) {
             super.startElement(NAMESPACE1, localName, qName, atts);
+        } else {
+            super.startElement(NAMESPACE2, localName, qName, atts);
         }    	
     }
  

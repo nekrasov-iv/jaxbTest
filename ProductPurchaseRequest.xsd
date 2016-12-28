@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<schema
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.example.org/ProductPurchaseRequest"
+    xmlns:tns="http://www.example.org/ProductPurchaseRequest"
+    xmlns:prod="http://www.example.org/Product"
+    elementFormDefault="qualified">
+    <import namespace="http://www.example.org/Product" schemaLocation="Product.xsd"/>
+    <element name="purchase-request">
+        <complexType>
+            <sequence>
+                <element ref="prod:product" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+</schema>
