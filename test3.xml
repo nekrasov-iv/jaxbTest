@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<purchase-request>
+	<product>
+		<id>1</id>
+		<name>Product 1</name>
+	</product>
+	<product>
+		<id>2</id>
+		<name>Product 2</name>
+	</product>
+	<product>
+		<id>3</id>
+		<name>Product 3</name>
+	</product>
+</purchase-request>

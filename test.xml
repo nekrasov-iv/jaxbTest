@@ -1,0 +1,14 @@
+﻿<purchase-request xmlns="http://www.example.org/ProductPurchaseRequest">
+	<product xmlns="http://www.example.org/Product">
+		<id>1</id>
+		<name>Product 1</name>
+	</product>
+	<product xmlns="http://www.example.org/Product">
+		<id>2</id>
+		<name>Product 2</name>
+	</product>
+	<product xmlns="http://www.example.org/Product">
+		<id>3</id>
+		<name>Product 3</name>
+	</product>
+</purchase-request>
